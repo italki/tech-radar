@@ -2,8 +2,8 @@
 
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<title>Zalando Tech Radar</title>
-<link rel="shortcut icon" href="https://www.zalando.de/favicon.ico">
+<title>italki Tech Radar</title>
+<link rel="shortcut icon" href="https://scdn.italki.com/orion/favicon.ico">
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="radar.js"></script>
@@ -25,12 +25,12 @@ radar_visualization({
     grid: "#bbb",
     inactive: "#ddd"
   },
-  title: "Zalando Tech Radar — 2022.04",
+  title: "italki Tech Radar — 2022.06",
   quadrants: [
-    { name: "Languages" },
-    { name: "Infrastructure" },
-    { name: "Datastores" },
-    { name: "Data Management" },
+    { name: "Program Language & Framework" },
+    { name: "Tool" },
+    { name: "Infratructure/Platform" },
+    { name: "Data" },
   ],
   rings: [
     { name: "ADOPT", color: "#93c47d" },
@@ -42,377 +42,391 @@ radar_visualization({
   // zoomed_quadrant: 0,
   //ENTRIES
   entries: [
+      // Infratructure/Platform ADOPT
       {
-        "quadrant": 3,
-        "ring": 2,
-        "label": "AWS Athena",
+        "quadrant": 2,
+        "ring": 0,
+        "label": "AWS Lambda",
+        "link": "https://aws.amazon.com/lambda/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "AWS Data Pipeline",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
+        "quadrant": 2,
         "ring": 0,
         "label": "AWS EMR",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 2,
-        "label": "AWS Glue",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Airflow",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Databricks",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "Flink",
-        "link": "https://engineering.zalando.com/tags/apache-flink.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "Google BigQuery",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "Hadoop",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "Presto",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Spark",
-        "link": "https://engineering.zalando.com/tags/apache-spark.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "YARN",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 2,
-        "label": "dbt",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "AWS DynamoDB",
+        "link": "https://aws.amazon.com/emr/",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 2,
+        "ring": 0,
+        "label": "AWS Personalize",
+        "link": "https://aws.amazon.com/personalize/",
+        "active": true,
+        "moved": 0
+      },
+      // END
+      
+      // Infratructure/Platform ASSESS
+      // END
+
+      // Infratructure/Platform TRIAL
+      // END
+      
+      // Infratructure/Platform HOLD
+      // END
+
+      // Data ADOPT
+      {
+        "quadrant": 3,
         "ring": 0,
         "label": "AWS S3",
+        "link": "https://aws.amazon.com/s3/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Aerospike",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "Amazon Redshift",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Cassandra",
-        "link": "https://engineering.zalando.com/tags/cassandra.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Consul",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "CouchBase",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "Druid",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 2,
+        "quadrant": 3,
         "ring": 0,
         "label": "Elasticsearch",
-        "link": "https://engineering.zalando.com/tags/elasticsearch.html",
+        "link": "https://www.elastic.co/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 2,
+        "quadrant": 3,
         "ring": 0,
-        "label": "Exasol",
+        "label": "Kafka",
+        "link": "https://kafka.apache.org/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 2,
-        "ring": 2,
-        "label": "Google Bigtable",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "HBase",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 1,
-        "label": "HDFS",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Hazelcast",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Memcached",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "MongoDB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "MySQL",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Oracle DB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
+        "quadrant": 3,
         "ring": 0,
-        "label": "PostgreSQL",
-        "link": "https://engineering.zalando.com/tags/postgresql.html",
+        "label": "Mysql5.6",
+        "link": "https://www.mysql.com/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 2,
+        "quadrant": 3,
         "ring": 0,
         "label": "Redis",
-        "link": "https://engineering.zalando.com/tags/redis.html",
+        "link": "https://redis.io/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 2,
+        "quadrant": 3,
+        "ring": 0,
+        "label": "AWS Kinesis",
+        "link": "https://aws.amazon.com/kinesis/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "AWS Redshift",
+        "link": "https://aws.amazon.com/redshift/",
+        "active": true,
+        "moved": 0
+      }, 
+      // END
+      
+      // Data ASSESS
+      // END
+      
+      // Data TRIAL
+      {
+        "quadrant": 3,
+        "ring": 1,
+        "label": "AWS Sagemarker",
+        "link": "https://aws.amazon.com/sagemaker/",
+        "active": true,
+        "moved": 0
+      },
+      // END
+
+      // DATA HOLD
+      {
+        "quadrant": 3,
+        "ring": 3,
+        "label": "AWS SQS",
+        "link": "https://aws.amazon.com/sqs/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 3,
+        "label": "RabbitMQ",
+        "link": "https://www.rabbitmq.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 3,
+        "label": "Consul",
+        "link": "https://www.consul.io/",
+        "active": true,
+        "moved": 0
+      },
+      // END
+
+      // Tool ADOPT
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "XXL",
+        "link": "https://github.com/xuxueli/xxl-job",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Webpack",
+        "link": "https://webpack.js.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Flipper",
+        "link": "https://fbflipper.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Firebase",
+        "link": "https://firebase.google.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Web Vitals",
+        "link": "https://web.dev/vitals/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Storybook",
+        "link": "https://storybook.js.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Nexus",
+        "link": "https://nexus.italki.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Appuim",
+        "link": "https://appium.io/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Pytest",
+        "link": "https://docs.pytest.org/en/7.1.x/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Allure",
+        "link": "https://allure.qatools.ru/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Testrail",
+        "link": "https://italki.testrail.io/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "CocoaPods",
+        "link": "https://cocoapods.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Gradle",
+        "link": "https://gradle.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Sentry",
+        "link": "https://xsentry.italki.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Maven",
+        "link": "https://maven.apache.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Looker",
+        "link": "https://www.looker.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Athena",
+        "link": "https://aws.amazon.com/athena/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Google Analytics",
+        "link": "https://analytics.google.com/analytics/web/",
+        "active": true,
+        "moved": 0
+      },
+      // END
+
+      // Tool ASSESS
+      {
+        "quadrant": 1,
         "ring": 2,
-        "label": "RocksDB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "Solr",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "ZooKeeper",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "etcd",
+        "label": "OpenTracing(Zipkin)",
+        "link": "https://zipkin.io/",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 1,
-        "ring": 0,
-        "label": "AWS CloudFormation",
+        "ring": 2,
+        "label": "Vite",
+        "link": "https://vitejs.dev/",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 1,
-        "ring": 0,
-        "label": "AWS CloudFront",
+        "ring": 2,
+        "label": "esbuild",
+        "link": "https://esbuild.github.io/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 2,
+        "label": "AppCode",
+        "link": "https://www.jetbrains.com/zh-cn/objc/features/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 2,
+        "label": "Swift Package",
+        "link": "https://www.swift.org/package-manager/",
+        "active": true,
+        "moved": 0
+      },
+      // END
+
+      // Tool TRIAL
+      {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Nx",
+        "link": "https://nx.dev/",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 1,
         "ring": 1,
-        "label": "AWS Lambda",
+        "label": "Quicksight",
+        "link": "https://aws.amazon.com/quicksight/",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 1,
-        "ring": 0,
-        "label": "Amazon SageMaker",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Docker",
-        "link": "https://engineering.zalando.com/tags/docker.html\"",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Kubernetes",
-        "link": "https://engineering.zalando.com/tags/kubernetes.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Nginx",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "OpenTracing",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 3,
-        "label": "STUPS",
-        "link": "https://engineering.zalando.com/tags/stups.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Skipper",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 2,
-        "label": "Slurm",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "ZMON",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 3,
-        "label": "Clojure",
-        "link": "https://engineering.zalando.com/tags/clojure.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
         "ring": 1,
-        "label": "Dart",
+        "label": "Glue",
+        "link": "https://aws.amazon.com/glue/",
         "active": true,
-        "moved": 1
+        "moved": 0
       },
+      // END
+
+      // Tool HOLD
+      {
+        "quadrant": 1,
+        "ring": 3,
+        "label": "Grunt",
+        "link": "https://gruntjs.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 3,
+        "label": "Carthage",
+        "link": "https://github.com/Carthage/Carthage",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 1,
+        "ring": 3,
+        "label": "JCenter",
+        "link": "https://mvnrepository.com/repos/jcenter",
+        "active": true,
+        "moved": 0
+      },
+      // END
+
+      // Program Language & Framework Adopt
       {
         "quadrant": 0,
         "ring": 0,
-        "label": "Go",
+        "label": "Golang",
         "link": "https://engineering.zalando.com/tags/golang.html",
         "active": true,
         "moved": 0
@@ -420,87 +434,32 @@ radar_visualization({
       {
         "quadrant": 0,
         "ring": 0,
-        "label": "GraphQL",
-        "link": "https://engineering.zalando.com/tags/graphql.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 3,
-        "label": "Haskell",
-        "link": "https://engineering.zalando.com/tags/haskell.html",
+        "label": "Gin",
+        "link": "https://github.com/gin-gonic/gin",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 0,
         "ring": 0,
-        "label": "Java",
-        "link": "https://engineering.zalando.com/tags/java.html",
+        "label": "RESTful API",
+        "link": "https://en.wikipedia.org/wiki/Representational_state_transfer",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 0,
         "ring": 0,
-        "label": "JavaScript",
-        "link": "https://engineering.zalando.com/tags/javascript.html",
+        "label": "React",
+        "link": "https://reactjs.org/",
         "active": true,
         "moved": 0
       },
       {
         "quadrant": 0,
         "ring": 0,
-        "label": "Kotlin",
-        "link": "https://engineering.zalando.com/tags/kotlin.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "OpenAPI (Swagger)",
-        "link": "https://engineering.zalando.com/tags/openapi.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "Python",
-        "link": "https://engineering.zalando.com/tags/python.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 2,
-        "label": "R",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 3,
-        "label": "Rust",
-        "link": "https://engineering.zalando.com/tags/rust.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "Scala",
-        "link": "https://engineering.zalando.com/tags/scala.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "Swift",
-        "link": "https://engineering.zalando.com/tags/swift.html",
+        "label": "ECMAScript",
+        "link": "https://en.wikipedia.org/wiki/ECMAScript",
         "active": true,
         "moved": 0
       },
@@ -513,64 +472,189 @@ radar_visualization({
         "moved": 0
       },
       {
-        "quadrant": 3,
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Next.js",
+        "link": "https://nextjs.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Taro",
+        "link": "https://taro-docs.jd.com/taro/docs/1.x/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "React Native",
+        "link": "https://reactnative.dev/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Tailwind CSS",
+        "link": "https://tailwindcss.com/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Cypress",
+        "link": "https://www.cypress.io/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Kotlin",
+        "link": "https://developer.android.com/kotlin",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Swift",
+        "link": "https://developer.apple.com/cn/swift",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Storyboard",
+        "link": "https://developer.apple.com/library/archive/documentation/General/Conceptual/Devpedia-CocoaApp/Storyboard.html",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Spark",
+        "link": "https://spark.apache.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Sqoop",
+        "link": "https://sqoop.apache.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Luigi",
+        "link": "https://github.com/spotify/luigi",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Jupter Notebook",
+        "link": "https://jupyter.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Python3",
+        "link": "https://docs.python.org/3/",
+        "active": true,
+        "moved": 0
+      },
+      // END
+
+      // Program Language & Framework ASSESS
+      {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "GraphQL",
+        "link": "https://graphql.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "Micro Frontends",
+        "link": "https://micro-frontends.org/",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "SwiftUI",
+        "link": "https://developer.apple.com/xcode/swiftui/",
+        "active": true,
+        "moved": 0
+      },
+      // END
+      // Program Language & Framework Trial
+      {
+        "quadrant": 0,
         "ring": 1,
-        "label": "AWS Kinesis",
+        "label": "Airflow",
         "active": true,
         "moved": 0
       },
+      // END
+
+      // Program Language & Framework Hold
       {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "AWS SNS",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "AWS SQS",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
+        "quadrant": 0,
         "ring": 3,
-        "label": "ActiveMQ",
+        "label": "Python2",
+        "link": "https://docs.python.org/2/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 3,
+        "quadrant": 0,
         "ring": 3,
-        "label": "HornetQ",
+        "label": "Tornado",
+        "link": "https://www.tornadoweb.org/en/stable/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Kafka",
-        "link": "https://engineering.zalando.com/tags/apache-kafka.html",
+        "quadrant": 0,
+        "ring": 3,
+        "label": "Flask",
+        "link": "https://flask.palletsprojects.com/en/2.1.x/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Nakadi",
-        "link": "https://nakadi.docs.zalando.net",
+        "quadrant": 0,
+        "ring": 3,
+        "label": "AngularJS",
+        "link": "https://angularjs.org/",
         "active": true,
         "moved": 0
       },
       {
-        "quadrant": 3,
-        "ring": 1,
-        "label": "RabbitMQ",
-        "link": "https://engineering.zalando.com/tags/rabbitmq.html",
+        "quadrant": 0,
+        "ring": 3,
+        "label": "Objective-C",
+        "link": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
         "active": true,
         "moved": 0
-      }
+      },
+      // END
     ]
   //ENTRIES
 });
@@ -583,37 +667,17 @@ radar_visualization({
 <h3>What is the Tech Radar?</h3>
 
 <p>
-The Zalando Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring assignment</em>. We use four rings with the following semantics:
+  The Radar is a document that sets out the changes that we think are currently interesting in software development — things in motion that we think we should pay attention to and consider using in our projects. It reflects the idiosyncratic opinion of a bunch of senior technologists and is based on our day-to-day work and experiences. 
 </p>
 
 <ul>
-<li><strong>ADOPT</strong> &mdash; Technologies we have high confidence in to serve our purpose, also in large scale. Technologies with a usage culture in our Zalando production environment, low risk and recommended to be widely used.</li>
-<li><strong>TRIAL</strong> &mdash; Technologies that we have seen work with success in project work to solve a real problem; first serious usage experience that confirm benefits and can uncover limitations. TRIAL technologies are slightly more risky; some engineers in our organization walked this path and will share knowledge and experiences.</li>
-<li><strong>ASSESS</strong> &mdash; Technologies that are promising and have clear potential value-add for us; technologies worth to invest some research and prototyping efforts in to see if it has impact. ASSESS technologies have higher risks; they are often brand new and highly unproven in our organisation. You will find some engineers that have knowledge in the technology and promote it, you may even find teams that have started a prototyping effort.</li>
-<li><strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects, but usually can be continued for existing projects.</li>
+<li><strong>ADOPT</strong> &mdash; The Radar is a document that sets out the changes that we think are currently interesting in software development — things in motion that we think we should pay attention to and consider using in our projects. It reflects the idiosyncratic opinion of a bunch of senior technologists and is based on our day-to-day work and experiences. </li>
+<li><strong>TRIAL</strong> &mdash; Is for blips that we think are ready for use, but not as completely proven as those in the Adopt ring. we think should use these on a trial basis, to decide whether they should be part of our toolkit.</li>
+<li><strong>ASSESS</strong> &mdash; Are things to look at closely, but not necessarily trial yet.</li>
+<li><strong>HOLD</strong> &mdash; is for things that, even though they are accepted in the industry, we haven't had a good experience with. Therefore we are calling them out to warn you that you may run into trouble with them as well.</li>
 </ul>
 
 </td><td>
-
-<h3>What is the purpose?</h3>
-
-<p>
-The Tech Radar is a tool to inspire and support Engineering teams at Zalando to pick the best technologies for new projects; it provides a platform to share knowledge and experience in technologies, to reflect on technology decisions and continuously evolve our technology landscape. Based on the <a href="https://www.thoughtworks.com/radar">pioneering work of ThoughtWorks</a>, our Tech Radar sets out the changes in technologies that are interesting in software development &mdash; changes that we think our engineering teams should pay attention to and use in their projects.
-</p>
-
-<h3>How do we maintain it?</h3>
-
-<p>
-The Tech Radar is maintained by our <em>Principal Engineers</em> &mdash; who facilitate and drive the technology selection discussions at Zalando across the Engineering Community. Assignment of technologies to rings is the outcome of ring change proposals, which are discussed and voted on. The Tech Radar is open for contribution for all Engineering teams at Zalando and depends on their active participation to share lessons learned, pitfalls, and contribute to good practices on using the technologies.<br/>
-</p>
-
-<p>
-Check out our <a href="https://engineering.zalando.com/tags/tech-radar.html">Engineering Blog</a> for more information on how we approach Technology Selection and use the Tech Radar at Zalando.
-</p>
-
-<p>
-<em>BTW, if you would like to create your own Tech Radar &mdash; we have <a href="https://github.com/zalando/tech-radar">open sourced the code</a> to generate this visualization.</em>
-</p>
 
 </td></tr>
 </table>
